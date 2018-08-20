@@ -1,0 +1,462 @@
+/************************************general******************************/
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.cannot-see {
+	visibility: hidden;
+}
+
+.hide {
+	display: none;
+}
+
+body {
+	min-width: 787px;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.barba-container {
+	height: 100%;
+	width: 100%;
+}
+
+.box {
+	position: absolute;
+	right: 100vw;
+	top: 0;
+	height: 100vh;
+	width: 100%;
+	background-color: #ac8bd0;
+	z-index: 500;
+}
+
+.nav-bar-container {
+	position: absolute;
+	margin-left: 40px;
+	top: 190px;
+	left: 0;
+	transform: none;
+	z-index: 1000;
+}
+
+.nav-bar-container li {
+	display: block;
+}
+
+.nav-bar-container ul.nav-bar {
+	padding: 0;
+	white-space: nowrap;
+}
+
+.nav-bar-container li a {
+	font-family: 'Vesper Libre', serif;
+	text-align: left;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 1;
+	font-size: 50px;
+	font-weight: 900;
+	color: #c53296;
+	transition: color 0.2s ease;
+}
+
+.nav-bar-container li.on a {
+	color: #5F0D9F;
+}
+
+.nav-bar-container li a:hover {
+	color: #f52db5;
+}
+
+.display {
+	margin-bottom: 50px;
+}
+
+.display .thumbnail-wrapper {
+	position: relative;
+	height: 200px;
+}
+
+.display .thumbnail {
+	position: absolute;
+	width: 100px;
+	height: 180px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+.display .thumbnail .pic {
+	position: relative;
+	width: 100px;
+	height: 150px;
+	box-shadow: -5px 5px 4px rgba(57, 48, 68, 0.46);
+	overflow: hidden;
+}
+
+.display .thumbnail .pic > img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.display .thumbnail .title {
+	width: 100px;
+	height: auto;
+	margin-top: 6px;
+	text-align: left;
+}
+
+.display .thumbnail .title > span {
+	height: auto;
+	color: #5F0D9F;
+	font-family: 'Roboto Slab', serif;
+	font-size: 12px;
+	font-weight: 300;
+	letter-spacing: 1.5px;
+	text-shadow: -5px 5px 4px rgba(57, 48, 68, 0.46);
+}
+
+.catalog {
+	padding-top: 10px;
+}
+
+.catalog > p.title,
+.catalog .table > a.entry {
+	display: block;
+	color: #5F0D9F;
+	cursor: pointer;
+	font-family: 'Roboto Slab', serif;
+	font-size: 12px;
+	font-weight: 300;
+	text-decoration: none;
+	letter-spacing: 1px;
+	padding: 8px 0;
+	transition: color 0.3s ease;
+}
+
+.catalog > p.title {
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.catalog .table > a.entry:hover {
+	color: #AD805B;
+}
+
+svg path.purple-svg {
+	fill: #5F0D9F;
+}
+
+svg path.pink-svg {
+	fill: #c53296;
+}
+
+.small-logo {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 280px;
+	left: -20px;
+	z-index: 900;
+}
+
+.small-logo svg {
+	width: 350px;
+}
+
+.mask-logo .header-pic {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.mask-logo .header-pic > img {
+	position: absolute;
+	right: 0;
+	min-width: 85%;
+	max-width: 100%;
+	min-height: 90%;
+	display: block;
+}
+
+.mask-logo {
+	width: 100%;
+	height: 100%;
+}
+
+.mask-logo svg {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/************************************general******************************/
+
+/************************************index******************************/
+.index-container {
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	min-width: 760px;
+	min-height: 820px;
+	overflow: auto;
+	background-color: #f9f9f9;
+}
+
+.index-title {
+	position: absolute;
+	margin: 40px;
+}
+
+.index-title > span {
+	display: block;
+	font-family: 'Vesper Libre', serif;
+	text-align: left;
+	text-transform: uppercase;
+	line-height: 1;
+	font-size: 50px;
+	font-weight: 900;
+	color: #9f8baf;
+}
+
+.index-info .avatar {
+	margin-bottom: 10px;
+}
+
+.index-info .avatar > img {
+	width: 50px;
+	border-radius: 100%;
+}
+
+.index-info {
+	position: absolute;
+	bottom: 0;
+	margin: 70px;
+	font-family: "Roboto Slab", sans-serif;
+	font-size: 11px;
+	color: #5f0d9f;
+}
+
+.index-info span:nth-child(1) {
+	display: block;
+	margin-bottom: 30px;
+}
+
+.index-info span i {
+	font-size: 18px;
+}
+
+.index-info span a {
+	text-decoration: none;
+	color: #5f0d9f;
+	transition: color 0.2s ease;
+}
+
+.index-info span a:hover {
+	color: #c53296;
+}
+
+.index-logo {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	z-index: 900;
+}
+
+.index-logo svg {
+	width: 550px;
+}
+
+/************************************index******************************/
+
+/*********************************design****************************/
+.content-wrapper {
+	width: 100%;
+	position: relative;
+}
+
+.content-header {
+	min-width: 787px;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+
+.content-header .index-info {
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: right;
+	margin-top: 40px;
+	color: #88808e;
+}
+
+.content-header .index-info a {
+	color: #88808e;
+}
+
+.project-wrapper {
+	position: relative;
+	top: -50vh;
+	width: 100%;
+	min-width: 991px;
+	margin: 50px 0;
+}
+
+.project .project-pic {
+	min-height: 500px;
+}
+
+.project .project-pic > img {
+	display: block;
+	margin: 0 auto;
+}
+
+.project .project-pic .design-mask {
+	position: absolute;
+	cursor: pointer;
+}
+
+.project .project-intro {
+	padding-left: 8%;
+	z-index: 100;
+}
+
+.project .project-intro span {
+	position: relative;
+	display: block;
+	text-align: left;
+}
+
+.project .project-intro .number span:before {
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 300px;
+	background-color: #c53296;
+	top: 50%;
+	right: 100%;
+}
+
+.project .project-intro .number {
+	font-size: 100px;
+	line-height: 1;
+	color: #c53296;
+	font-family: 'Vesper Libre', serif;
+	font-weight: 900;
+}
+
+.project .project-intro .title span:nth-child(1) {
+	font-family: 'Vesper Libre', serif;
+	font-weight: 900;
+	font-size: 45px;
+	width: 100%;
+	line-height: 1;
+	word-break: break-word;
+	color: #c53296;
+	text-transform: uppercase;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+
+.project .project-intro .title span:nth-child(2) {
+	font-family: "Roboto Slab", sans-serif;
+	font-size: 13px;
+	padding-left: 5px;
+	color: #5f0d9f;
+	font-weight: 400;
+	text-transform: capitalize;
+}
+
+.project .project-intro .intro {
+	font-family: "Roboto Slab", sans-serif;
+	color: #5f0d9f;
+	font-weight: 300;
+	font-size: 13px;
+	margin: 10px 0;
+	padding: 4px;
+}
+
+.project .project-intro .intro a {
+	text-decoration: none;
+	color: #AD805B;
+	transition: color 0.2s ease;
+}
+
+.project .project-intro .intro a:hover {
+	color: #de8947;
+}
+
+.project .project-anchor img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 150px;
+	transform: translate(-50%, -50%);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.project .project-anchor .anchor-arrow {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	cursor: pointer;
+	transform: translate(-50%, -50%);
+}
+
+.project .project-anchor .anchor-arrow i {
+	font-size: 70px;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	opacity: 0.8;
+}
+
+.project .project-pic-part img {
+	margin-top: 20px;
+}
+
+.project .project-pic-part div {
+	text-align: center;
+}
+
+.project .project-pic-part span {
+	display: inline-block;
+	word-break: break-word;
+	font-family: "Roboto Slab", sans-serif;
+	font-size: 13px;
+	font-weight: 300;
+	margin-top: 20px;
+	text-align: left;
+}
+
+
+/*********************************design****************************/
