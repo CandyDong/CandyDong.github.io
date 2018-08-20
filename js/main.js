@@ -108,14 +108,14 @@ var barba = {
 					TweenMax.set(new_nav_bar, {opacity: 0});
 					
 					tl.add('transit');
-					tl.to(old_wrapper, 0.5, {autoAlpha: 0}, 'transit');
+					tl.to(old_wrapper, 0.2, {autoAlpha: 0}, 'transit');
 					tl.to(old_nav_bar, 0.5, {top: '190px'}, 'transit');
 					tl.to(new_nav_bar, 0.2, {opacity: 1}, 'transit+=0.5');
 					tl.to(small_logo_svg, 0.8, {width: '550px', ease: Power4.easeOut}, 'transit+=0.5');
 					tl.to(small_logo, 0.8, {top: '50%', left: '50%', ease: Power4.easeOut}, 'transit+=0.5');
 					tl.to(index_logo, 0.2, {opacity: 1}, 'transit+=1.3');
-					tl.to(this.oldContainer, 0.2, {autoAlpha: 0}, 'transit+=1.5');
-					tl.to(new_wrapper, 0.5, {opacity: 1}, 'transit+=1.7');
+					tl.to(this.oldContainer, 0.5, {autoAlpha: 0}, 'transit+=1.5');
+					tl.to(new_wrapper, 0.5, {opacity: 1}, 'transit+=1.5');
 					tl.set(this.newContainer, {zIndex: 0});
 
 				}
@@ -125,6 +125,8 @@ var barba = {
 						var new_nav_bar = this.newContainer.querySelector('.nav-bar-container');
 						var old_wrapper = this.oldContainer.querySelector('.content-wrapper');
 						var new_wrapper = this.newContainer.querySelector('.content-wrapper');
+						var new_elements = $(new_wrapper).children();
+						
 						TweenMax.set(this.newContainer, {
 							position: 'fixed',
 							top: 0,
@@ -136,7 +138,7 @@ var barba = {
 						});
 						TweenMax.set(old_nav_bar, {zIndex: 2000});
 						TweenMax.set(new_nav_bar, {opacity: 0});
-						TweenMax.set(new_wrapper, {opacity: 0});
+						TweenMax.set(new_elements, {opacity: 0});
 						
 						tl.add('transit');
 						tl.to(old_wrapper, 0.5, {autoAlpha: 0}, 'transit');
@@ -144,7 +146,7 @@ var barba = {
 						tl.to(old_nav_bar, 0.2, {opacity: 0}, 'transit+=1');
 						tl.set(old_nav_bar, {zIndex: 1000});
 						tl.to(this.oldContainer, 0.2, {autoAlpha: 0}, 'transit+=1.2');
-						tl.to(new_wrapper, 0.5, {opacity: 1}, 'transit+=1.4');
+						tl.staggerTo(new_elements, 0.8, {opacity: 1}, 'transit+=1.4');
 						tl.set(this.newContainer, {zIndex: 0});
 						
 					}
