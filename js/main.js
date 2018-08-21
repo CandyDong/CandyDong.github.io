@@ -125,7 +125,6 @@ var barba = {
 						var new_nav_bar = this.newContainer.querySelector('.nav-bar-container');
 						var old_wrapper = this.oldContainer.querySelector('.content-wrapper');
 						var new_wrapper = this.newContainer.querySelector('.content-wrapper');
-						var new_elements = $(new_wrapper).children();
 						
 						TweenMax.set(this.newContainer, {
 							position: 'fixed',
@@ -138,7 +137,7 @@ var barba = {
 						});
 						TweenMax.set(old_nav_bar, {zIndex: 2000});
 						TweenMax.set(new_nav_bar, {opacity: 0});
-						TweenMax.set(new_elements, {opacity: 0});
+						TweenMax.set(new_wrapper, {opacity: 0});
 						
 						tl.add('transit');
 						tl.to(old_wrapper, 0.5, {autoAlpha: 0}, 'transit');
@@ -146,7 +145,7 @@ var barba = {
 						tl.to(old_nav_bar, 0.2, {opacity: 0}, 'transit+=1');
 						tl.set(old_nav_bar, {zIndex: 1000});
 						tl.to(this.oldContainer, 0.2, {autoAlpha: 0}, 'transit+=1.2');
-						tl.staggerTo(new_elements, 0.8, {opacity: 1}, 'transit+=1.4');
+						tl.to(new_wrapper, 0.2, {opacity: 1}, 'transit+=1.4');
 						tl.set(this.newContainer, {zIndex: 0});
 						
 					}
