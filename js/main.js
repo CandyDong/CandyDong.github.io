@@ -181,13 +181,12 @@ var barba = {
 						tl.to(this.oldContainer, 0.2, {autoAlpha: 0}, 'transit+=1.5');
 						tl.to(new_wrapper, 0.5, {opacity: 1}, 'transit+=1.5');
 						tl.set(this.newContainer, {zIndex: 0});
-						
-						if (transit_to == "art") {
-							window.art.init();
-						}	
 					}
 				}
 				
+				if (transit_to == "art") {
+					window.art.init();
+				}	
 				window.nav.init();	
 			}
 		});
