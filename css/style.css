@@ -478,10 +478,13 @@ svg path.pink-svg {
 /*********************************resume****************************/
 .project-wrapper#resume {
 	padding-top: 50px;
+	padding-bottom: 50px;
 	margin-top: 0;
 	box-shadow: -5px -3px 8px rgba(0, 0, 0, 0.2);
 	z-index: 900;
 	border-right: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	
 }
 
 .resume-header .avatar img {
@@ -623,5 +626,9 @@ svg path.pink-svg {
 
 .resume-content .part-items .desc p a:hover {
 	color: #f52eb5;
+}
+
+.resume-content .item-wrapper .skill-item > span {
+	display: block;
 }
 /*********************************resume****************************/
