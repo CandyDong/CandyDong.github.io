@@ -42,6 +42,14 @@ body {
 	z-index: 500;
 }
 
+i.fa-award {
+	color: #ffa900;
+}
+
+i.fa-check{
+	color: #00bb82;
+}
+
 .nav-bar-container {
 	position: absolute;
 	margin-left: 40px;
@@ -460,3 +468,98 @@ svg path.pink-svg {
 
 
 /*********************************design****************************/
+
+/*********************************resume****************************/
+.project-wrapper#resume {
+	padding-top: 50px;
+	margin-top: 0;
+	box-shadow: -5px -3px 8px rgba(0, 0, 0, 0.2);
+	z-index: 900;
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.resume-header .avatar img {
+	border-radius: 100%;
+	margin-top: 20px;
+}
+
+.resume-header .intro span.name,
+.resume-header .intro span.school,
+.resume-header .intro span.major {
+	display: block;
+	font-family: "Roboto Slab", sans-serif;
+	text-transform: capitalize;
+	font-size: 15px;
+}
+
+.resume-header .intro span.name {
+	font-family: 'Vesper Libre', serif;
+	font-size: 35px;
+	line-height: 1;
+	text-transform: uppercase;
+	margin: 10px 0;
+}
+
+.resume-header .intro span.location {
+	font-family: "Roboto Slab", sans-serif;
+	font-size: 13px;
+	font-weight: 300;
+	text-transform: capitalize;
+	color: #88808e;
+}
+
+.resume-content .title {
+	font-family: 'Vesper Libre', serif;
+	font-size: 28px;
+}
+
+.resume-content .part-items {
+	font-family: "Roboto Slab", sans-serif;
+	font-size: 14px;
+}
+
+.resume-content .part-items .number {
+	font-size: 60px;
+	font-family: 'Vesper Libre', serif;
+	text-align: center;
+	color: #d3d3d4;
+}
+
+.resume-content .part-items .number span {
+	display: inline-block;
+	line-height: 100%;
+}
+
+.resume-content .part-items .org {
+	padding: 0;
+}
+
+.resume-content .part-items .org img {
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.resume-content .part-items .desc i {
+	margin-right: 10px;
+}
+
+.resume-content .part-items .desc span {
+	display: inline-block;
+	word-break: break-all;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	margin-right: 20px;
+}
+
+.resume-content .part-items .desc p a {
+	color: #c53296;
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+.resume-content .part-items .desc p a:hover {
+	color: #f52eb5;
+}
+/*********************************resume****************************/

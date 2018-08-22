@@ -58,7 +58,7 @@ var barba = {
 	
 	barba_init: function () {
 		Barba.Pjax.init();
-  		Barba.Prefetch.init();
+  		//Barba.Prefetch.init();
 	},
 	
 	transition_init: function () {
@@ -80,7 +80,7 @@ var barba = {
 				});
 				
 				var transit_to = window.nav.get_cur_page();
-				var transit_from = window.nav.get_prev_page();
+				var transit_from = window.nav.get_prev_page() || "index";
 				
 				if (transit_to == "index") {
 					var old_nav_bar = this.oldContainer.querySelector('.nav-bar-container');
@@ -231,7 +231,13 @@ var nav = {
 	
 	nav_highlight: function () {
 		var cur_page = this.get_cur_page();
-		TweenMax.to(this.nav_url_dic[cur_page], 1, {className: "+=on"});
+		
+		if (cur_page !== ""){
+			TweenMax.to(this.nav_url_dic[cur_page], 1, {className: "+=on"});
+		}
+		else {
+			TweenMax.to(this.nav_url_dic['index'], 1, {className: "+=on"});
+		}
 	}
 };
 
