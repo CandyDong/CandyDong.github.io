@@ -417,6 +417,12 @@ svg path.pink-svg {
 	color: #de8947;
 }
 
+.project .project-anchor a {
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+}
+
 .project .project-anchor img {
 	position: absolute;
 	top: 50%;
@@ -480,32 +486,65 @@ svg path.pink-svg {
 
 .resume-header .avatar img {
 	border-radius: 100%;
-	margin-top: 20px;
-}
-
-.resume-header .intro span.name,
-.resume-header .intro span.school,
-.resume-header .intro span.major {
-	display: block;
-	font-family: "Roboto Slab", sans-serif;
-	text-transform: capitalize;
-	font-size: 15px;
 }
 
 .resume-header .intro span.name {
+	display: block;
 	font-family: 'Vesper Libre', serif;
 	font-size: 35px;
-	line-height: 1;
+	line-height: 0.7;
 	text-transform: uppercase;
-	margin: 10px 0;
 }
 
+.resume-header .intro span.website {
+	display: block;
+	font-family: "Roboto Slab", sans-serif;
+	font-size: 13px;
+	font-weight: 300;
+	margin-left: 3px;
+	color: #88808e;
+}
+
+.resume-header .intro span.website a {
+	text-decoration: none;
+	color: #88808e;
+	transition: color 0.2s ease;
+}
+
+.resume-header .intro span.school,
+.resume-header .intro span.major,
+.resume-header .intro span.email,
+.resume-header .intro span.phone,
+.resume-header .intro span.wechat {
+	display: block;
+	font-family: "Roboto Slab", sans-serif;
+	font-size: 15px;
+}
+
+.resume-header .intro span.github,
+.resume-header .intro span.linkedin,
+.resume-header .intro span.behance {
+	display: inline-block;
+	font-family: "Roboto Slab", sans-serif;
+	margin-right: 5px;
+	font-size: 15px;
+}
 .resume-header .intro span.location {
 	font-family: "Roboto Slab", sans-serif;
 	font-size: 13px;
 	font-weight: 300;
 	text-transform: capitalize;
 	color: #88808e;
+}
+
+.resume-header .intro span a {
+	text-decoration: none;
+	color: black;
+	transition: color 0.2s ease;
+}
+
+.resume-header .intro span a:hover {
+	color: #c53296;
 }
 
 .resume-content .title {
@@ -530,13 +569,25 @@ svg path.pink-svg {
 	line-height: 100%;
 }
 
-.resume-content .part-items .org {
+.resume-content .part-items .info {
 	padding: 0;
 }
 
-.resume-content .part-items .org img {
+.resume-content .part-items .info img {
 	display: inline-block;
 	margin-top: 20px;
+}
+
+.resume-content .part-items .info span {
+	font-size: 12px;
+	font-weight: 300;
+	color: #88808e;
+}
+
+.resume-content .part-items .desc {
+	padding-right: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .resume-content .part-items .desc i {
@@ -551,6 +602,17 @@ svg path.pink-svg {
 	-ms-hyphens: auto;
 	hyphens: auto;
 	margin-right: 20px;
+}
+
+.resume-content .part-items .desc span.skills {
+	margin: 0;
+	font-size: 12px;
+	color: #88808e;
+	font-weight: 300;
+}
+
+.resume-content .part-items .desc p {
+	margin: 0;
 }
 
 .resume-content .part-items .desc p a {

@@ -6,29 +6,33 @@ var art = {
 	},
 	
 	vars: function () {
+		this.anchor = $('.project-anchor a');
 		this.anchor_arrow = $('.project-anchor .anchor-arrow');
 		this.svg_pic_mask = $('.project-pic svg.design-mask'); 
 	},
 	
 	anchor_init: function () {
-		this.anchor_arrow.each(function () {
-			var img = $(this).siblings('img');
+		this.anchor.each(function () {
+			var img = $('img', this);
+			var arrow = $('.anchor-arrow', this);
+			
 			var height = img.height();
 			var width = img.width();
 			
-			$(this).css('height', height);
-			$(this).css('width', width);
-			TweenMax.set(img, {webkitFilter: 'brightness(100%)'});
-			TweenMax.set(this, {opacity: 0});
-			$(this).removeClass('hide');
+			arrow.css('height', height);
+			arrow.css('width', width);
 			
-			$(this).hover(function () {
-				TweenMax.to(this, 0.8, {opacity: 1, ease: Power4.easeIn});
+			TweenMax.set(img, {webkitFilter: 'brightness(100%)'});
+			TweenMax.set(arrow, {opacity: 0});
+			arrow.removeClass('hide');
+			
+			$(this).mouseover(function () {
+				TweenMax.to(arrow, 0.8, {opacity: 1, ease: Power4.easeIn});
 				TweenMax.to(img, 0.3, {webkitFilter: 'brightness(80%)', ease: Power4.easeOut});
 			});
 			
 			$(this).mouseout(function () {
-				TweenMax.to(this, 0.8, {opacity: 0, ease: Power4.easeIn});
+				TweenMax.to(arrow, 0.8, {opacity: 0, ease: Power4.easeIn});
 				TweenMax.to(img, 0.3, {webkitFilter: 'brightness(100%)', ease: Power4.easeOut});
 			});
 		});
