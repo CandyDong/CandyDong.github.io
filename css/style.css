@@ -299,7 +299,8 @@ svg path.pink-svg {
 /*********************************design****************************/
 .content-wrapper {
 	width: 100%;
-	position: relative;
+	position: absolute;
+	top: 50vh;
 }
 
 .content-header {
@@ -325,7 +326,6 @@ svg path.pink-svg {
 
 .project-wrapper {
 	position: relative;
-	top: -50vh;
 	width: 100%;
 	min-width: 991px;
 	margin: 50px 0;
