@@ -638,6 +638,10 @@ svg path.pink-svg {
 	color: #f52eb5;
 }
 
+.resume-content .item-wrapper .skill-area {
+	font-weight: 900;
+}
+
 .resume-content .item-wrapper .skill-item > span {
 	display: block;
 }
