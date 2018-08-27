@@ -374,7 +374,7 @@ svg path.pink-svg {
 	font-weight: 900;
 }
 
-.project .project-intro .title span:nth-child(1) {
+.project .project-intro .title p.name {
 	font-family: 'Vesper Libre', serif;
 	font-weight: 900;
 	font-size: 45px;
@@ -389,7 +389,18 @@ svg path.pink-svg {
 	hyphens: auto;
 }
 
-.project .project-intro .title span:nth-child(2) {
+.project .project-intro .title p.category span:nth-child(1) {
+	display: inline-block;
+	font-family: "Roboto Slab", sans-serif;
+	font-size: 13px;
+	color: #FFF;
+	background-color: #928a98;
+	padding: 8px 15px;
+	border-radius: 50px;
+}
+
+.project .project-intro .title p.category span:nth-child(2){
+	display: inline-block;
 	font-family: "Roboto Slab", sans-serif;
 	font-size: 13px;
 	padding-left: 5px;
@@ -505,12 +516,10 @@ svg path.pink-svg {
 	font-size: 13px;
 	font-weight: 300;
 	margin-left: 3px;
-	color: #88808e;
 }
 
 .resume-header .intro span.website a {
 	text-decoration: none;
-	color: #88808e;
 	transition: color 0.2s ease;
 }
 
@@ -573,18 +582,19 @@ svg path.pink-svg {
 }
 
 .resume-content .part-items .info {
-	padding: 0;
+	text-align: center;
 }
 
 .resume-content .part-items .info img {
 	display: inline-block;
+	width: 70%;
 	margin-top: 20px;
 }
 
 .resume-content .part-items .info span {
+	display: block;
 	font-size: 12px;
 	font-weight: 300;
-	color: #88808e;
 }
 
 .resume-content .part-items .desc {
@@ -610,7 +620,7 @@ svg path.pink-svg {
 .resume-content .part-items .desc span.skills {
 	margin: 0;
 	font-size: 12px;
-	color: #88808e;
+	color: black;
 	font-weight: 300;
 }
 
@@ -619,7 +629,7 @@ svg path.pink-svg {
 }
 
 .resume-content .part-items .desc p a {
-	color: #c53296;
+	color: black;
 	text-decoration: none;
 	transition: color 0.2s ease;
 }

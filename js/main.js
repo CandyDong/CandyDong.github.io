@@ -62,7 +62,7 @@ var barba = {
 	
 	barba_init: function () {
 		Barba.Pjax.init();
-  		//Barba.Prefetch.init();
+  		Barba.Prefetch.init();
 	},
 	
 	transition_init: function () {
