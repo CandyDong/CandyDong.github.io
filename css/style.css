@@ -393,10 +393,11 @@ svg path.pink-svg {
 	display: inline-block;
 	font-family: "Roboto Slab", sans-serif;
 	font-size: 13px;
+	font-weight: 300;
 	color: #FFF;
-	background-color: #928a98;
-	padding: 8px 15px;
-	border-radius: 50px;
+	background-color: #c7bbc2;
+	padding: 2px 15px;
+	border-radius: 10px;
 }
 
 .project .project-intro .title p.category span:nth-child(2){
