@@ -489,8 +489,7 @@ svg path.pink-svg {
 
 /*********************************resume****************************/
 .project-wrapper#resume {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding: 50px 60px;
 	margin-top: 0;
 	box-shadow: -5px -3px 8px rgba(0, 0, 0, 0.2);
 	z-index: 900;
@@ -553,11 +552,11 @@ svg path.pink-svg {
 .resume-content .part-items .info .title:before {
 	content: "";
 	position: absolute;
-	width: 13px;
+	width: 60px;
 	height: 1px;
 	background-color: black;
 	top: 50%;
-	left: 0px;
+	left: -45px;
 }
 
 .resume-content .part-items .info .title {
