@@ -567,7 +567,6 @@ svg path.pink-svg {
 }
 
 .resume-content .part-items .info .date {
-	color: #88808e;
 	text-align: right;
 	font-size: 16px;
 }
@@ -591,13 +590,6 @@ svg path.pink-svg {
 	-ms-hyphens: auto;
 	hyphens: auto;
 	margin-right: 20px;
-}
-
-.resume-content .part-items .desc span.skills {
-	margin: 0;
-	font-size: 12px;
-	color: black;
-	font-weight: 300;
 }
 
 .resume-content .part-items .desc p {
@@ -644,10 +636,14 @@ svg path.pink-svg {
 }
 
 .resume-content .item-wrapper .skill-area {
-	font-weight: 900;
+	font-family: "Roboto Slab", sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1;
 }
 
 .resume-content .item-wrapper .skill-item > span {
 	display: block;
+	font-size: 18px;
 }
 /*********************************resume****************************/
