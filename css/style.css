@@ -552,7 +552,7 @@ svg path.pink-svg {
 .resume-content .part-items .info .title:before {
 	content: "";
 	position: absolute;
-	width: 60px;
+	width: 55px;
 	height: 1px;
 	background-color: black;
 	top: 50%;
@@ -569,12 +569,14 @@ svg path.pink-svg {
 .resume-content .part-items .info .date {
 	color: #88808e;
 	text-align: right;
+	font-size: 16px;
 }
 
 .resume-content .part-items .desc {
 	padding-right: 20px;
 	padding-left: 15px;
 	padding-bottom: 10px;
+	font-size: 18px;
 }
 
 .resume-content .part-items .desc i {
@@ -602,6 +604,7 @@ svg path.pink-svg {
 	margin: 0;
 }
 
+/*
 .resume-content .part-items .desc p q {
 	quotes: "\201C""\201D""\2018""\2019";
   	line-height: 1.8;
@@ -628,6 +631,7 @@ svg path.pink-svg {
 	font-size: 30px;
 	font-weight: 100;
 }
+*/
 
 .resume-content .part-items .desc p a {
 	color: black;
